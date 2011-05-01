@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  defender_id: 1
+  challenger_id: 1
+  victor_id: 1
+
+two:
+  defender_id: 1
+  challenger_id: 1
+  victor_id: 1
+
+
+# == Schema Information
+#
+# Table name: fights
+#
+#  id            :integer         not null, primary key
+#  defender_id   :integer
+#  challenger_id :integer
+#  victor_id     :integer
+#  rounds        :string(255)
+#  count         :integer         default(0)
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+

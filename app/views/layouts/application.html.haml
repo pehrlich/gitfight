@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %meta{:charset => 'utf-8'}
+    %title
+      = 'GitFite' || yield(:page_title)
+    = stylesheet_link_tag 'main'
+    <link  href="http://fonts.googleapis.com/css?family=MedievalSharp:regular" rel="stylesheet" type="text/css" >
+
+    = javascript_include_tag :defaults,
+                             "jquery.validate",
+                             "jquery.tmpl",
+                             'routes',
+                             "jquery.ba-hashchange"
+    = csrf_meta_tag
+  %body
+    = render 'layouts/flash'
+    #side_nav
+    .column
+      = yield
+    %img{:src => '/images/lightning.jpg', :id => 'background_graphic'}
+
+    #footer
+      %a{:href => 'github'} Github
+      &mdash;
+      %a{:href => 'about'} About
+      &mdash;
+      %a{:href => 'http://twitter.com/#!/ehrlicp'} Twitter

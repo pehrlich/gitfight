@@ -1,0 +1,76 @@
+Use this README file to introduce your application and point to useful places in the API for learning more.
+Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+
+https://github.com/fcoury/octopi/
+
+http://develop.github.com/p/repo.html repo section
+- forks: ok
+- open issues: ok
+created_at: ok (this should be handled differently)
+pushed_at: ok
+has_wiki: true
+- watchers: ok
+size: ok (does it matter?)
+
+http://develop.github.com/p/commits.html
+commit data - ok!
+can get whole history, with dates.  find activity. draw graph.
+
+
+http://www.doctrine-project.org/contribute
+collaborators: ok - repos/show/:user/:repo/collaborators [GET]
+contributors: ok - repos/show/:user/:repo/contributors
+contributions: ok (split by contributor).  Would be cool to do a contrib by contrib face-off.
+(more complex)
+
+
+http://develop.github.com/p/pulls.html
+count pull requests
+pull request discussions
+
+tie on watchers? on contributors?  See which has more experience..
+
+fun - user face off
+ - longest name
+best location
+number of repos
+w.e
+
+branches
+
+could look at all the forks and all their information… in the case of a tie
+
+
+navigation:
+recently watched
+recent battles
+popular battles (all time/this week)
+
+
+
+
+fightData.fight.challenger.cached_data
+"{"url":"https://github.com/rails/jquery-ujs",
+"description":"Ruby on Rails unobtrusive scripting adapter for jQuery",
+"open_issues":4,
+"fork":false,
+"homepage":"",
+"watchers":1303,
+"forks":99,"size":928,
+"private":false,
+"language":"JavaScript",
+"name":"jquery-ujs",
+"owner":{"gravatar_id":"30f39a09e233e8369dddf6feb4be0308",
+"company":null,
+"name":null,
+"created_at":"2008-04-01T18:59:25-07:00",
+"location":null,
+"public_repo_count":40,
+"public_gist_count":3,
+"blog":"http://weblog.rubyonrails.org/",
+"following_count":0,"id":4223,
+"type":"Organization",
+"followers_count":1914,
+"login":"rails",
+"email":null}}"

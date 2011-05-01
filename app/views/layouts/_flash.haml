@@ -1,0 +1,14 @@
+- if notice
+  .flash.notice
+    %p= notice # note: flash[:notice] seems not to work here
+    %a.close [x]
+
+- if alert
+  .flash.alert
+    %p= alert
+    %a.close [x]
+
+:javascript
+  $(".flash > .close").click(function(){
+    $(this).parent().hide();
+  });

@@ -1,0 +1,13 @@
+= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
+  = devise_error_messages!
+  = f.inputs "Basic" do
+    = f.input :email
+    = f.input :password, :hint => '(leave blank if you don\'t want to change it)'
+    = f.input :password_confirmation
+    = f.input :name
+    = f.input :location
+    -#= f.input :timezone, :as => :select, :collection => time_zone_options_for_select
+    = f.time_zone_select(:timezone)
+    = f.input :work_hours
+    = f.input :current_password, :hint => '(we need your current password to confirm your changes)'
+  = f.buttons

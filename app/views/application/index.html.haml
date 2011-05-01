@@ -1,0 +1,13 @@
+%h1 GitFight 2011
+
+%h2 NAME.&nbsp; YOUR.&nbsp; BATTLE.&nbsp;
+
+-#= render :partial => 'fight'
+%div{:'data-remote' => 'main'}
+
+%br
+%br
+%h2 Survey The BattleField
+-#%div{:'data-remote' => '/fights/recent', :'data-loadd' => 'true'}
+%div{:'data-load' => '/fights/recent'}
+-# Cannot work if this is a wdget as well

@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  path: MyString
+  cached_data: MyString
+
+two:
+  name: MyString
+  path: MyString
+  cached_data: MyString
+
+
+# == Schema Information
+#
+# Table name: contestants
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)
+#  user        :string(255)
+#  cached_data :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+

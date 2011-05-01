@@ -1,0 +1,38 @@
+= form_for @fight, :remote => true, :html => {:'data-target' => ':widget(fight)', :'data-type' => :json} do |f|
+  .defender
+    %label{:for => 'fight[defender]'}
+      %h3
+        The Defender:
+        %span{:'data-dynamic_label' => '#fight_defender'}
+    = f.text_field :defender
+
+  .challenger
+    %label{:for => 'fight[challenger]'}
+      %h3
+        The Challenger:
+        %span{:'data-dynamic_label' => '#fight_challenger'}
+    = f.text_field :challenger
+  %p= f.submit :value => 'Set Them Loose!'
+
+- show_fight = !@fight.blank? && !@fight.new_record?
+%div{:'data-remote' => ( fight_path(@fight) if show_fight ), :style => 'display: none;', :'data-fight' => true }
+  %table{:class => 'holder'}
+    %thead
+      %tr
+        %td Round:
+        %td Score:
+        %td Award:
+    %tbody
+%script{:type => 'text/html'}
+  %tr
+    %td
+      %strong{:class => "${class}"} ${h_name}:
+      \...
+    %td
+      %span{:class => "defender"} ${d_score}
+      to
+      %span{:class => "challenger"} ${c_score}
+      \...
+    %td
+      points:
+      %span{:class => "${class}"} +${weight}
